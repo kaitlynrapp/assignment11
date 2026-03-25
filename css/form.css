@@ -1,0 +1,46 @@
+
+
+@charset "UTF-8";
+
+/* form styling */
+
+#wrapper {
+    width: 60%;
+    margin-left: 4%;
+}
+
+div#formcol1 {
+    float: left;
+    width: 100%;
+}
+
+/* remove bullets */
+#formcol1 li {
+    list-style: none;
+}
+
+/* label styling */
+label {
+    margin-right: .3em;
+    width: 6.3em;
+    display: inline-block;
+    text-align: right;
+}
+
+/* highlight required fields */
+#formcol1 input.reqfield {
+    background: #FF9;
+}
+
+/* focus highlight */
+select:focus,
+select:active,
+input:focus,
+input:active,
+input:focus + label,
+input:active + label,
+label[for]:focus,
+label[for]:active {
+    color: #FFF !important;
+    background-color: #BB3D2F !important;
+}
